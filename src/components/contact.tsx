@@ -1,3 +1,4 @@
+import React from "react";
 import appstyle from "../App.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -10,10 +11,12 @@ import emailjs from '@emailjs/browser';
 function Contact(){
     // const [showAlert, setAlert]=useState(false)
 
-    const sendEmail= (e)=>{
+    const sendEmail= (e: React.FormEvent<HTMLFormElement>)=>{
         e.preventDefault();
 
-        emailjs.sendForm("service_rfdlu5c", "template_g4gcapb" , e.target, "h-y_1JfSOakMBXj1v")
+        const form = e.target as HTMLFormElement;
+
+        emailjs.sendForm("service_rfdlu5c", "template_g4gcapb" , form, "h-y_1JfSOakMBXj1v")
         .then((result)=>{
             console.log(result.text);
             
