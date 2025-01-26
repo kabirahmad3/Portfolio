@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding:0;
+    height: 100%;
+}
+body{
+    width: 100%;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.nav{
+    background-color:#535671;
+    height:7.5%;
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+    position: relative;
+    z-index: 0;
+    position: fixed;
+  }
+.head{
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    margin-left: 10px;
+    font-size: 2em;
+    font-weight: bolder;
+    height: 80%;
+  }
+.navcom{
+    font-weight: normal;
+    cursor: pointer;
+    width:auto;
+    height: 80%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .navcom:hover{
+    background-color:#c2a6c9;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-weight: bold;
+    padding-left: -5px;
+    padding-right: -5px; 
+} */
+.navcom:active{
+    text-decoration: underline;
+}
+.subnav{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.navco{
+    height: auto;
+}
+/* .navc1{
+    text-decoration-line: underline;
+} */
+.homepage{
+    display: flex;
+    flex-direction: column;
+    font-size: 5rem;
+    font-weight: auto;
+    justify-content: center;
+    padding-left: 15%;
+    background-image: url("./components/beautiful-scenery-summit-mount-everest-covered-with-snow-white-clouds.jpg");
+    background-position: center;
+    /* margin-top:-30px ; */
+}
+#name{
+    height: auto;
+    width:fit-content;
+    display: flex;
+}
+.buttons{
+    height:auto;
+    width: 25vw;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+#tag{
+    font-size: 1.5rem;
+    height:auto;
+    width: 9vw;
+    background-color: #535671;
+    border-radius: 7.5px;
+    border: 2px solid black;
+}
+#tag:hover,#tag1:hover{
+    box-shadow: 2px 2px 10px 2px rgb(0 0 0 / 0.8);
+}
+#tag1{
+    height: auto;
+    width: 9vw;
+    font-size: 1.25rem;
+    border-radius: 7.5px;
+    border: 2px solid black;
+    background-color: #535671;
+}
+.auto::before{
+    content: "Kabir Ahmad.";
+    color: white;
+    position: absolute;
+    height: 10dvh;
+    max-width:fit-content;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 20px;
+    border-right: 2px solid black;
+    animation: 
+            words 20s infinite,
+            cursor .8s infinite,
+            typing 20s infinite;
+
+}
+@keyframes cursor{
+    to{
+        border-right: 2px solid #e7decc;
+    }
+}
+@keyframes words{
+    0%,33%{
+        content:"Kabir Ahmad.";
+    }
+    34%,66%{
+        content:"Student.";
+    }
+    67%,100%{
+        content:"Frontend Developer.";
+    }
+}
+@keyframes typing{
+    0%,33%,66%,100%{
+        width: 0%;
+    }
+    16.5%,49.5%,82.5%{
+        width:100%;
+    }
+}
+
+
+/* Education Section */
+.edu{
+    background-color: #535671;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+
+/* Skills Section */
+.skill{
+    background-color: #535671;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: 3px solid black;
+}
+
+
+/* Certification Section */
+.cert{
+    background-color: #535671;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: 3px solid black;
+}
+
+
+/* Contact Section */
+.con{
+    background-color: whitesmoke;/*#7a7da8*/
+    font-size: 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: 3px solid black;
+}
+.form{
+    width: 90%;
+    height: 80%;
+    background-color:#535671;
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sec1{
+    width: 80%;
+    height:30%;
+    margin-left: 7%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.sec1heading{
+    padding-top: 40px;
+    height: fit-content;
+    margin-bottom: 20px;
+}
+.sec1para{
+    font-size: x-large;
+    font-weight: normal;
+}
+.sec2{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* background-color: aquamarine; */
+}
+.sec2div{
+    font-size: x-large;
+    font-weight: normal;
+    padding-left: 20%;
+    height: fit-content;
+    padding-bottom: 30px;
+    padding-top: 40px;
+}
+.phone{
+    font-size: 35px;
+}
+.phone1{
+    height: fit-content;
+}
+.sec2div2{
+    font-size: x-large;
+    font-weight: normal;
+    padding-left: 20%;
+    height: fit-content;
+    padding-bottom: 30px;
+}
+.location{
+    font-size: 40px;
+}
+.location1{
+    height: fit-content;
+}
+.sec2div3{
+    font-size: x-large;
+    font-weight: normal;
+    padding-left: 20%;
+    height: fit-content;
+}
+.mail{
+    font-size: 35px;
+}
+.mail1{
+    height: fit-content;
+}
+.sec3{
+    width: 50%;
+    height: 50%;
+    /* background-color: aqua; */
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+.formname{
+    width: 50%;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: none;
+}
+input[type=text],input[type=email], textarea{
+    padding: 12px 20px;
+    /* margin: 8px 0; */
+    box-sizing: border-box;
+}
+.formemail{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+.formsubject{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+.formmessage{
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    border: none;
+}
+.formsubmit{
+    width: 20%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+.formsubmit:hover{
+    box-shadow: 2px 2px 10px 2px rgb(0 0 0 / 0.8);
+}
