@@ -20,7 +20,7 @@ function Contact(){
         .then((result)=>{
             console.log(result.text);
             alert("Email Sent");
-            window.location.href="/";
+            window.location.href="/Portfolio/#home";
             
         }, (error)=>{
             console.log(error.text);
