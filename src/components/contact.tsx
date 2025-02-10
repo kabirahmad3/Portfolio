@@ -19,9 +19,13 @@ function Contact(){
         emailjs.sendForm("service_rfdlu5c", "template_g4gcapb" , form, "h-y_1JfSOakMBXj1v")
         .then((result)=>{
             console.log(result.text);
+            alert("Email Sent");
+            window.location.href="/";
             
         }, (error)=>{
             console.log(error.text);
+            alert("Email not Sent");
+            window.location.reload();
     });
     }
     return(
